@@ -1,0 +1,39 @@
+
+<!-- <div>
+    <td>{{ user.firstName }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.birthDate }}</td>
+      <td>
+        <img  height="60px"  [src]="user.image" alt="no image" class=""
+        />
+      </td>
+      <td>{{ user.address.address }}</td>
+      
+    
+  </div> -->
+  <div id="main">
+    <h1>Random User</h1>
+  <div class="a-box">
+    <div class="img-container">
+      <div class="img-inner">
+        <div class="inner-skew">
+          <img [src]="user.image" alt="no image">
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <h3>Name:{{ user.firstName }}</h3>
+      <div>
+        <h3>Age:{{ user.age }}</h3>
+        <h3>Email:{{ user.email }}</h3>
+        <h3>Phone:{{ user.phone }}</h3>
+        <h3>BirthDate:{{ user.birthDate }}</h3>
+
+
+    </div>
+    <button router (click)="randomUser()" class="btn btn-success m-1 ">REFRESH</button>
+      <button routerLink="/" class="btn btn-primary  m-1 p-1 " >Go Back</button>
+  </div>
+</div>

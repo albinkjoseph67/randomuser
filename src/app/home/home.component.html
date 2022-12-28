@@ -1,0 +1,35 @@
+
+
+<!-- {{allUsers | json}} -->
+<button id="b1" routerLink="/randomuser/view" class="btn btn-primary " >Click To View RANDOM USER</button>&nbsp;
+<br>
+<br>
+
+<h1 id="a1">User Data</h1>&nbsp;
+
+<div id="main">
+<table  >
+    <tr id="t1">
+      <th>FirstName</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>BirthDate</th>
+      <th>Photo</th>
+      <th>Address</th>
+    </tr>
+    <tr id="t2" *ngFor="let user of allUsers ">
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.birthDate }}</td>
+      <td>
+        <img  height="60px"  [src]="user.image" alt="no image" class="">
+        
+      </td>
+      <td>{{ user.address.address }}</td>
+    </tr>
+  </table></div> -->
+
+  
